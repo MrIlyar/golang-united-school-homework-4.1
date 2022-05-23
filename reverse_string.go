@@ -5,7 +5,7 @@ func ReverseString(input string) (output string) {
 	var length = len(runes)
 
 	for i := 0; i < length/2; i++ {
-		runes[i], runes[length-i-i] = runes[length-i-i], runes[i]
+		runes[i], runes[length-1-i] = runes[length-1-i], runes[i]
 	}
 
 	output = string(runes)
